@@ -2,7 +2,7 @@
 
 A lightweight, feature-rich Neovim setup focused on modern development with minimal dependencies.
 
-![Neovim](https://neovim.io/logos/neovim-mark-flat.png)
+<img src="https://neovim.io/logos/neovim-mark-flat.png" width="100" alt="Neovim">
 
 ## Features
 

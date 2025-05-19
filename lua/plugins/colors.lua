@@ -6,7 +6,7 @@
         bg0 = "#1d1d20",
         fg = "#eaeaec",
       },
-      style = "warmer",
+      style = "deep",
 			transparent = false,
     },
   }

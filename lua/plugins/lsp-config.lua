@@ -23,12 +23,6 @@ return {
 		},
 	},
 
-	{
-		"theRealCarneiro/hyprland-vim-syntax",
-		dependencies = { "nvim-treesitter/nvim-treesitter" },
-		ft = "hypr",
-	},
-
 	-- {
 	--   "neovim/nvim-lspconfig",
 	--   lazy = false,
@@ -56,4 +50,3 @@ return {
 	--   end,
 	-- },
 }
-

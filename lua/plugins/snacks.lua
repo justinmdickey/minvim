@@ -447,7 +447,7 @@ return {
 		-- 	desc = "Toggle Terminal",
 		-- },
 		{
-			"<c-_>",
+			"<leader>t",
 			function()
 				Snacks.terminal()
 			end,
@@ -511,4 +511,3 @@ return {
 		})
 	end,
 }
-

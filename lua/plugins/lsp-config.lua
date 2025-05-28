@@ -1,13 +1,26 @@
 return {
+	-- {
+	-- 	"williamboman/mason.nvim",
+	-- 	lazy = false,
+	-- 	opts = {
+	-- 		auto_install = true,
+	-- 	},
+	-- 	config = function()
+	-- 		require("mason").setup()
+	-- 	end,
+	-- },
+
 	{
-		"williamboman/mason.nvim",
-		lazy = false,
+		"mason-org/mason.nvim",
 		opts = {
-			auto_install = true,
+			ui = {
+				icons = {
+					package_installed = "✓",
+					package_pending = "➜",
+					package_uninstalled = "✗",
+				},
+			},
 		},
-		config = function()
-			require("mason").setup()
-		end,
 	},
 
 	{

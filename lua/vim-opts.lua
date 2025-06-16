@@ -12,6 +12,7 @@ vim.cmd("set fillchars=eob:\\ ")
 
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
+vim.opt.whichwrap:append("<,>,h,l,[,]")
 -- Tabs
 vim.keymap.set("n", "<leader>p", ":bprevious<CR>")
 vim.keymap.set("n", "<leader>n", ":bnext<CR>")

@@ -20,7 +20,7 @@ A lightweight, feature-rich Neovim setup focused on modern development with mini
 - **bufferline.nvim**: Elegant tabs for your buffers
 - **conform.nvim**: Auto-formatting with support for various languages
 - **noice.nvim**: Better command prompt UI
-- **marview.nvim**: Markdown Rendering
+- **markview.nvim**: Markdown Rendering
 - **oil.nvim**: File explorer that feels like a buffer
 - **mason.nvim**: Easy LSP server management
 - **treesitter**: Enhanced syntax highlighting

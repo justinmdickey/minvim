@@ -21,9 +21,33 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
+-- Clipboard
+vim.g.clipboard = {
+	name = "OSC 52",
+	copy = {
+		["+"] = require("vim.ui.clipboard.osc52").copy("+"),
+		["*"] = require("vim.ui.clipboard.osc52").copy("*"),
+	},
+	paste = {
+		["+"] = require("vim.ui.clipboard.osc52").paste("+"),
+		["*"] = require("vim.ui.clipboard.osc52").paste("*"),
+	},
+}
+
 vim.opt.swapfile = false
 vim.opt.undofile = true
 vim.opt.undodir = os.getenv("HOME") .. "/.local/share/nvim/undo"
+
+-- Open at last edit
+vim.api.nvim_create_autocmd("BufReadPost", {
+	pattern = "*",
+	callback = function()
+		local line = vim.fn.line("'\"")
+		if line >= 1 and line <= vim.fn.line("$") and vim.bo.filetype ~= "commit" then
+			vim.cmd('normal! g`"')
+		end
+	end,
+})
 
 -- Setup lazy.nvim
 require("lazy").setup({

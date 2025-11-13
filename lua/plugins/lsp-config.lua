@@ -28,8 +28,10 @@ return {
 		event = "VeryLazy",
 		cmd = "Mason",
 		opts = {
-			automatic_installation = true,
-			ensure_installed = { "docker_compose_language_service" },
+			-- Don't auto-install LSP servers
+			-- To install manually: :Mason then select servers to install
+			automatic_installation = false,
+			ensure_installed = {},
 		},
 		dependencies = {
 			"williamboman/mason.nvim",

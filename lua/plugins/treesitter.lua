@@ -7,9 +7,11 @@ return {
 			local configs = require("nvim-treesitter.configs")
 
 			configs.setup({
-				ensure_installed = { "lua", "vim", "vimdoc" },
+				-- Don't auto-install parsers (requires C compiler)
+				-- To install manually when C compiler available: :TSInstall <language>
+				ensure_installed = {},
 				sync_install = false,
-				auto_install = true,
+				auto_install = false,
 				highlight = { enable = true },
 				indent = { enable = true },
 			})
